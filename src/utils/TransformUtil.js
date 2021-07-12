@@ -1,6 +1,8 @@
 const DateUtil = require('./DateUtil');
 
 module.exports.objectToArray = objectData => {
+  objectData = objectData ?? {};
+
   const dataList = Object.keys(objectData).map(key => {
 
     const data = {
